@@ -1,4 +1,4 @@
-#Neovim Configuration
+# Neovim Configuration
 Install neovim
 ```
 sudo apt-get update
