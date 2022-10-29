@@ -13,7 +13,8 @@ curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --c
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 mkdir -p ~/.config/nvim/
-ln -fs ~/.dotfiles/init.vim ~/.config/nvim/init.vim
+ln -fs ~/.dotfiles/init.lua ~/.config/nvim/init.lua
+ln -fs ~/.dofiles/lua ~/.config/nvim/lua
 nvim --headless +PlugInstall +qa
 
 # Powerlevel10k
