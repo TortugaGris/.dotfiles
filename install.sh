@@ -24,8 +24,7 @@ ln -fs ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
 ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 chsh -s "$(command -v zsh)"
 
-# Colorls
-sudo apt-get install ruby-dev ubuntu-dev-tools
-gem install colorls
-echo 'source $(dirname $(gem which colorls))/tab_complete.sh' >> ~/.zshrc
-echo 'alias ls="colorls"' >> ~/.zshrc
+# LSD
+wget https://github.com/Peltoche/lsd/releases/download/0.22.0/lsd-musl_0.22.0_amd64.deb -P ~/download
+sudo dpkg -i ~/download/lsd-musl_0.22.0_amd64.deb
+echo 'alias ls="lsd"' >> ~/.zshrc
