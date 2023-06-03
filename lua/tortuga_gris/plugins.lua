@@ -52,10 +52,13 @@ return packer.startup(function(use)
     use "moll/vim-bbye"
     use "akinsho/toggleterm.nvim"
     use "nvim-lualine/lualine.nvim"
+    use "brenoprata10/nvim-highlight-colors"
 
     -- Colorschemes
     -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
     use "morhetz/gruvbox"
+    use "sainnhe/gruvbox-material"
+    use "rebelot/kanagawa.nvim"
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin

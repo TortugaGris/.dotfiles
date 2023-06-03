@@ -11,7 +11,7 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.background = "dark"
 vim.opt.showtabline = 4
+vim.opt.termguicolors = true
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "120"
 vim.cmd [[highlight ColorColumn ctermbg=0 guibg=lightgrey]]
--- colorscheme gruvbox
