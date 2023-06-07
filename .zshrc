@@ -12,3 +12,4 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 alias vim="nvim"
 alias ls="lsd"
+export TERM='xterm-256color'

@@ -57,3 +57,6 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<c-w>", ":Bdelete<cr>", opts)
+
+keymap("n", "<leader>lf", ":lua vim.lsp.buf.format()<cr>", opts)

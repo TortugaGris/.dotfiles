@@ -53,6 +53,7 @@ return packer.startup(function(use)
     use "akinsho/toggleterm.nvim"
     use "nvim-lualine/lualine.nvim"
     use "brenoprata10/nvim-highlight-colors"
+    use "jose-elias-alvarez/null-ls.nvim"
 
     -- Colorschemes
     -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out

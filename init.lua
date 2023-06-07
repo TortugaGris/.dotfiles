@@ -11,6 +11,6 @@ require "tortuga_gris.gitsigns"
 require "tortuga_gris.nvim-tree"
 require "tortuga_gris.bufferline"
 require "tortuga_gris.comment"
-require "tortuga_gris.toggleterm"
+--[[ require "tortuga_gris.toggleterm" ]]
 require "tortuga_gris.lualine"
 require "tortuga_gris.nvim-highlight-colors"
