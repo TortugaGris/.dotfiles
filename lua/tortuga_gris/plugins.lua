@@ -54,6 +54,7 @@ return packer.startup(function(use)
     use "nvim-lualine/lualine.nvim"
     use "brenoprata10/nvim-highlight-colors"
     use "jose-elias-alvarez/null-ls.nvim"
+    use "christoomey/vim-tmux-navigator"
 
     -- Colorschemes
     -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -75,8 +76,9 @@ return packer.startup(function(use)
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
     -- LSP
-    use "neovim/nvim-lspconfig" -- enable LSP
-    use "williamboman/nvim-lsp-installer" --simple to use language server installer
+    use "williamboman/mason.nvim"
+    use "williamboman/mason-lspconfig.nvim"
+    use "neovim/nvim-lspconfig"
 
     -- Telescope
     use "nvim-telescope/telescope.nvim"
@@ -90,6 +92,7 @@ return packer.startup(function(use)
 
     -- Git
     use "lewis6991/gitsigns.nvim"
+    use "tpope/vim-fugitive"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
