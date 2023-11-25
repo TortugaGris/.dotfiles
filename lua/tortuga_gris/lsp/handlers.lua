@@ -139,9 +139,9 @@ function M.remove_augroup(name)
     end
 end
 
-vim.cmd [[ command! LspToggleAutoFormat execute 'lua]]
+vim.cmd [[ command! LspToggleAutoFormat execute toggle_format_on_save()]]
 
-M.toggle_format_on_save()
+--[[ M.toggle_format_on_save() ]]
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 

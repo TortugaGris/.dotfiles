@@ -14,13 +14,26 @@ null_ls.setup({
     debug = false,
     -- the sources are prettier, eslint_d and rubocop
     sources = {
-        formatting.prettier,
+        --[[ formatting.prettier.with({ ]]
+        --[[     condition = function(utils) ]]
+        --[[         return utils.root_has_file({ '.prettierrc', '.prettierrc.js', 'prettierrc.json' }) ]]
+        --[[     end ]]
+        --[[ }), ]]
 
         -- setting eslint_d only if we have a ".eslintrc.js" file in the project
         diagnostics.eslint_d.with({
             condition = function(utils)
-                return utils.root_has_file({ '.eslintrc.js' })
+                return utils.root_has_file({ '.eslintrc', '.eslintrc.js', '.eslintrc.json' })
             end
         }),
+        formatting.eslint_d.with({
+            condition = function(utils)
+                local has_eslint = utils.root_has_file({ '.eslintrc', '.eslintrc.js', '.eslintrc.json' })
+                --[[ local has_prettier = utils.root_has_file({ '.prettierrc', '.prettierrc.js', 'prettierrc.json' }) ]]
+                --[[ return has_eslint and not has_prettier ]]
+                return has_eslint
+            end
+        }),
+        formatting.autopep8,
     }
 })

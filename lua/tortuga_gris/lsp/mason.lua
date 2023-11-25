@@ -17,6 +17,7 @@ local servers = {
     "jsonls", 
     "tsserver", 
     "tailwindcss",
+    "pylsp",
 }
 
 local settings = {
