@@ -1,0 +1,5 @@
+services:
+  dotfiles:
+    image: ubuntu:22.04
+    volumes:
+      - ./:/.dotfiles
