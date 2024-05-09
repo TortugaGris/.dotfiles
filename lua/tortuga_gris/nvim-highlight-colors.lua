@@ -4,7 +4,8 @@ if not status_ok then
 end
 
 nvim_highlight_colors.setup {
-    render = 'background', -- 'background 'or 'foreground' or 'first_column'
+    render = 'virtual', -- 'background 'or 'foreground' or 'first_column'
+    virtual_symbol = '■',
 	enable_named_colors = true,
 	enable_tailwind = false
 }

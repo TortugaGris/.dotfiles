@@ -32,7 +32,7 @@ ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 ln -fs ~/.dotfiles/zsh ~/.config/zsh
 
 # Neovim dependencies
-sudo apt-get install nodejs npm python3 python3-pip python3-venv -y 
+sudo apt-get install nodejs npm -y 
 
 # Install Neovim
 wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz -P ~/download
