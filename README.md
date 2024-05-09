@@ -8,7 +8,7 @@ bash <(curl https://raw.githubusercontent.com/TortugaGris/.dotfiles/main/install
 ## What does it include?
 
 <details>
-<summary>[zsh](https://www.zsh.org/)</summary>
+<summary>ZSH</summary>
 
 - [zap](https://github.com/zap-zsh/zap) (plugin manager)
     - [powerlevel10k](https://github.com/romkatv/powerlevel10k)
@@ -21,7 +21,7 @@ bash <(curl https://raw.githubusercontent.com/TortugaGris/.dotfiles/main/install
     - [zoxide](https://github.com/ajeetdsouza/zoxide)
 </details>
 <details>
-<summary>[neovim](https://github.com/neovim/neovim)</summary>
+<summary>Neovim</summary>
 
 - [packer.nvim](https://github.com/wbthomason/packer.nvim) (plugin manager)
 - [popup.nvim](https://github.com/nvim-lua/popup.nvim)
@@ -63,7 +63,7 @@ bash <(curl https://raw.githubusercontent.com/TortugaGris/.dotfiles/main/install
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
 </details>
 <details>
-<summary>[tmux](https://github.com/tmux/tmux)</summary>
+<summary>Tmux</summary>
 
 - [libevent](https://github.com/libevent/libevent) (dependency)
 - [ncurses](https://invisible-island.net/ncurses/announce.html) (dependency)
