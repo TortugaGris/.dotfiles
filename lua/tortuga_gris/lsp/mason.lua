@@ -15,7 +15,6 @@ local servers = {
     "eslint", 
     "html", 
     "jsonls", 
-    "tsserver", 
     "tailwindcss",
 }
 
