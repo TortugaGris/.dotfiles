@@ -11,6 +11,7 @@ end
 
 local servers = {
     "angularls",
+    "ts_ls",
     "cssls", 
     "eslint", 
     "html", 
@@ -43,6 +44,8 @@ if not lspconfig_status_ok then
     return
 end
 
+local util = require("lspconfig.util")
+
 local opts = {}
 
 for _, server in pairs(servers) do
@@ -54,7 +57,10 @@ for _, server in pairs(servers) do
 
     -- get the server name
     server = vim.split(server, "@")[1]
-
+    if(server=="angularls")
+    then
+        opts.root_dir = util.root_pattern("project.json", "angular.json")
+    end
     -- pass them to lspconfig
     lspconfig[server].setup(opts)
 end
